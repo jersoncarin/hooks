@@ -1,4 +1,4 @@
-# Hooks API for PHP
+# Jers Hooks API for PHP
 
 Hooks is a hooking system which like wordpress hooking
 
@@ -16,7 +16,7 @@ Hooks is a hooking system which like wordpress hooking
 
 # Installation
 ```php
-composer require jerson/hooks
+composer require jersoncarin/jershooks
 ```
 # How to use
 ```php
