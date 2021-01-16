@@ -1,6 +1,6 @@
 # Jers Hooks API for PHP
 
-Hooks is a hooking system which like wordpress hooking
+JersHooks is a hooking system which inspired by wordpress hooking api
 
   - apply_filters
   - add_filter
