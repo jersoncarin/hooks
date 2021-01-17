@@ -194,14 +194,14 @@ class Hook implements HookInterface {
     
 
     /**
-	 * Checks if any hooks registered
-	 *
-	 *
-	 * @return bool True if any hooks registered, otherwise false
-	 */
-	public function has_filters() {
-		return static::$hooks !== [];
-	}
+    * Checks if any hooks registered
+    *
+    *
+    * @return bool True if any hooks registered, otherwise false
+    */
+    public function has_filters() {
+	return static::$hooks !== [];
+    }
 
 
      /**
