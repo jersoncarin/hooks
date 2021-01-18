@@ -156,7 +156,7 @@ class Hook implements HookInterface {
      * 
      * @return void
      */
-    public function do_action(string $tag,mixed ...$args): mixed
+    public function do_action(string $tag,mixed ...$args): void
     {
         $hooks = static::$hooks;
         // +1 for $value parameter
@@ -199,7 +199,8 @@ class Hook implements HookInterface {
     *
     * @return bool True if any hooks registered, otherwise false
     */
-    public function has_filters() {
+    public function has_filters(): bool
+    {
 	return static::$hooks !== [];
     }
 
