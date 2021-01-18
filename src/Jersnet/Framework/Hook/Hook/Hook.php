@@ -224,9 +224,9 @@ class Hook implements HookInterface {
 
         foreach(static::$hooks[$tag]['object'] as $key => $value) {
             if($value === $callable) {
-                return !isset(static::$hooks[$tag]['object'][$key])
-                    && !isset(static::$hooks[$tag]['priority'][$key])
-                    && !isset(static::$hooks[$tag]['args_limit'][$key]);
+                return isset(static::$hooks[$tag]['object'][$key])
+                    && isset(static::$hooks[$tag]['priority'][$key])
+                    && isset(static::$hooks[$tag]['args_limit'][$key]);
             }
         }
 
